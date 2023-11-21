@@ -646,12 +646,8 @@ p, li {
 a:active {
   background:green;
 }
-@media handheld {
-  body { background-color: purple;}
-}
-@media screen {
+
+body { background-color: red; }
+@media (max-width: 768px){
   body { background-color: green; }
-}
-@media print {
-  body { background-color: red; }
 }
