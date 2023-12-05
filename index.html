@@ -115,6 +115,178 @@
       </div>
     </section><!-- End About Section -->
 
+    <!-- Math -->
+    <section id="math" class="portfolio section-bg">
+      <div class="container">
+        <math display="block">
+          <mrow> <!-- single row for symbols-->
+              <msup>
+                <mi>a</mi>
+                <mn>2</mn> <!-- Number -->
+              </msup>
+              <mo>=</mo> <!-- Operator -->
+              <msup>
+                <mi>b</mi> <!-- Iterator-->
+                <mn>2</mn>
+              </msup>
+              <mi>+</mi>
+              <mspace width="0.5ex"/> <!-- Space-->
+              <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msup>
+          </mrow>
+        </math>
+        <p>In mathematics, a matrix (pl.: matrices) is a rectangular array or table of numbers, symbols, or expressions, arranged in rows and columns, which is used to represent a mathematical object or a property of such an object.clude/package.mk</p>
+        
+        <math display="block">
+          <mo>(</mo>
+          <mtable  frame="solid" rowlines="solid" align="axis 3"> <!-- Matrix -->
+            <mtr> <!-- Matrix row -->
+              <mtd> <!-- Matrix element-->
+                <mi>U</mi>
+                <mi>(</mi>
+                <mi>t</mi>
+                <mi>)</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>V</mi>
+                <mi>(</mi>
+                <mi>t</mi>
+                <mi>)</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>W</mi>
+                <mi>(</mi>
+                <mi>t</mi>
+                <mi>)</mi>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>)</mo>
+          <mo>=</mo>
+          <mo>(</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mn>0</mn>
+              </mtd>
+              <mtd>
+                <mn>0</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>0</mi>
+              </mtd>
+              <mtd>
+                <mi>cos</mi>
+                <mo>&ApplyFunction; </mo>
+                <mi>R</mi>
+                <mi>t</mi>
+              </mtd>
+              <mtd>
+                <mo>-</mo>
+                <mi>sin</mi>
+                <mo>&ApplyFunction; </mo>
+                <mi>R</mi>
+                <mi>t</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>0</mi>
+              </mtd>
+              <mtd>
+                <mi>sin</mi>
+                <mo>&ApplyFunction; </mo>
+                <mi>R</mi>
+                <mi>t</mi>
+              </mtd>
+              <mtd>
+                <mi>cos</mi>
+                <mo>&ApplyFunction; </mo>
+                <mi>R</mi>
+                <mi>t</mi>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>)</mo>
+          <mo>(</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mi>U</mi>
+                <mi>(</mi>
+                <mi>0</mi>
+                <mi>)</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>V</mi>
+                <mi>(</mi>
+                <mi>0</mi>
+                <mi>)</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>W</mi>
+                <mi>(</mi>
+                <mi>0</mi>
+                <mi>)</mi>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>)</mo>
+        </math>
+        
+      </div>
+    </section><!-- End Math Section -->
+    
+     <!-- SVG -->
+     <style>
+      svg * {
+        fill:rgba(221, 203, 43, 0.5); /* sets the shapes background and transparency */
+        stroke:rgb(243, 243, 0); /* makes the border specific color */
+        stroke-width:9; /* sets the weight of the border */
+      }
+      .cheese {
+        animation-name: cheesits;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite; /* loops infinitely*/
+        transform-origin: 65% 65%; /* makes transformation around specific part of svg */
+      }
+      @keyframes cheesits { /* animation, rotates to set position every % milestone of duration */
+          0%    { transform: rotate(90deg); }
+          16%   { transform: rotate(0deg); }
+          33%   { transform: rotate(-90deg); }
+          51%   { transform: rotate(90deg); }
+          67%   { transform: rotate(0deg); }
+          83%  { transform: rotate(-90deg); }
+          100%  { transform: rotate(0); }
+      }
+    </style>
+     <section id="svg" class="portfolio section-bg">
+      <div class="container" style="text-align:center">
+        <h2>I would like to present you with some cheese</h2>
+        <svg width="300" height="300"> <!-- Svg tag with enough room for figure-->
+          <polygon class="cheese" points="150 150, 230 120, 250 150" stroke-linejoin="round"/> <!-- Polygon points coordinates for creating the top triangle, corners rounded-->
+          <rect class="cheese" x="150" y="150" stroke-linejoin="round" width="100" height="60"/> <!-- Rectangle with rounded corners-->
+          <circle class="cheese" cx="175" cy="185" r="11"/> <!-- Circle at specific place with radius 11 -->
+          <circle class="cheese" cx="222" cy="175" r="8"/> <!-- Circle at specific place with radius 8-->
+        </svg>     
+      </div>
+    </section><!-- End SVG Section -->
+
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
