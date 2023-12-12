@@ -20,11 +20,11 @@ a {
 }
 
 a:hover {
-  color: rgb(255,255,255);
+  color: rgb(237, 55, 55);
   text-decoration: none;
 }
 
-/*
+
 h1,
 h2,
 h3,
@@ -35,7 +35,6 @@ h6 {
   font-weight: bolder;
   font-size: 100%;
 }
-*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -106,7 +105,7 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(237, 55, 55);
   text-decoration: none;
 }
 
@@ -199,14 +198,14 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(237, 55, 55);
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: rgb(255, 255, 255);
+  color: rgb(237, 55, 55);
 }
 
 /* Mobile Navigation */
@@ -313,11 +312,9 @@ h6 {
 section {
   padding: 120px 0;
   overflow: hidden;
-  /*
   margin: 10% 10% 10% 10%;
   border-style:dashed;
   border-color:blue;
-  */
 }
 
 .section-bg {
@@ -635,7 +632,6 @@ section {
   height:auto;
 }
 
-/*
 .image-item{
   width: 100%;
   height: 300px;
@@ -655,4 +651,3 @@ body { background-color: red; }
 @media (max-width: 768px){
   body { background-color: green; }
 }
-*/
